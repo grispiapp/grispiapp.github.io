@@ -12,6 +12,15 @@
         background-color: #fbfbfb;
       }
 
+      a:link,
+      a:visited,
+      a:hover,
+      a:active {
+        color: #555;
+        text-decoration: none;
+        font-family: sans-serif;
+      }
+
       section {
         display: flex;
       }
@@ -24,6 +33,13 @@
       
       main>section>div>a {
         align-self: center;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: revert;
+        align-items: center;
+        flex-direction: column;
       }
       
       main>section>div>a:hover {
@@ -39,16 +55,21 @@
         <div>
           <a href="https://grispi.com">
             <img src="grispi.svg">
+            <span>Grispi App</span>
           </a>
         </div>
         <div>
           <a href="/api-docs/">
-            <img width="200" src="api.png">
+            <img width="150" src="api.png">
+            <span>Grispi Public API Documentation</span>
           </a>
         </div>
         <div>
           <a href="/testrtc/">
-            <img width="200" src="mic.png">
+            <br>
+            <img width="120" src="mic.png">
+            <br>
+            <span>Test your browser microphone</span>
           </a>
         </div>
       </section>
