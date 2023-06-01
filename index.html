@@ -1,9 +1,58 @@
 <html>
-<head>
-<meta http-equiv="refresh" content="0;url=https://grispi.com">
-<title>Grispi</title>
-</head>
-<body>
-<h1><a href="https://grispi.com">Grispi.com</a></h1>
-</body>
+  <head>
+    <title>Grispi</title>
+    <style>
+      html,
+      body,
+      main,
+      section {
+        height: 100%;
+        padding: 0;
+        margin: 0;
+        background-color: #fbfbfb;
+      }
+
+      section {
+        display: flex;
+      }
+
+      main>section>div {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+      }
+      
+      main>section>div>a {
+        align-self: center;
+      }
+      
+      main>section>div>a:hover {
+        background-color: #eee;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <main>
+      <section>
+        <div>
+          <a href="https://grispi.com">
+            <img src="grispi.svg">
+          </a>
+        </div>
+        <div>
+          <a href="/api-docs/">
+            <img width="200" src="api.png">
+          </a>
+        </div>
+        <div>
+          <a href="/testrtc/">
+            <img width="200" src="mic.png">
+          </a>
+        </div>
+      </section>
+    </main>
+  </body>
+
 </html>
